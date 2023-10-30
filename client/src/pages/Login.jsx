@@ -104,7 +104,7 @@ function Login() {
           </button>
           <span className='text-black uppercase'>
             Dont Have an Account ?{' '}
-            <Link to='/login' className='text-purple-900 font-bold'>
+            <Link to='/register' className='text-purple-900 font-bold'>
               Register
             </Link>
           </span>
