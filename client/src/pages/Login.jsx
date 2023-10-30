@@ -1,6 +1,6 @@
-import React, { useState ,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import Logo from '../assets/logo.svg';
+import Logo from '../assets/logo.png';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
@@ -9,9 +9,8 @@ import { loginRoute } from '../utils/apiRoutes';
 function Login() {
   const [values, setValues] = useState({
     username: '',
-   
+
     password: '',
-    
   });
   const toastConfig = {
     position: 'top-left',
@@ -32,7 +31,7 @@ function Login() {
       const { username, password } = values;
       const { data } = await axios.post(loginRoute, {
         username,
-        
+
         password,
       });
       if (data.status === false) {
@@ -53,7 +52,7 @@ function Login() {
     setValues({ ...values, [event.target.name]: event.target.value });
   };
   const handleValidation = () => {
-    const { username,  password } = values;
+    const { username, password } = values;
     if (password === '') {
       toast.error('Username and Password is required', toastConfig);
       return false;
@@ -63,7 +62,7 @@ function Login() {
     } else if (password.length < 6) {
       toast.error('Password should be more than 6 character', toastConfig);
       return false;
-    } 
+    }
 
     return true;
   };
@@ -87,7 +86,7 @@ function Login() {
             className=' px-4 py-2 border border-purple-600 rounded text-black w-full'
             min='3'
           />
-        
+
           <input
             type='password'
             placeholder='Password'
@@ -95,12 +94,12 @@ function Login() {
             onChange={(e) => handleChange(e)}
             className='px-4 py-2 border border-purple-600 rounded text-black w-full'
           />
-         
+
           <button
             type='submit'
             className='bg-purple-900 text-black px-8 py-4 font-bold cursor-pointer rounded uppercase'
           >
-           Logim
+            Logim
           </button>
           <span className='text-black uppercase'>
             Dont Have an Account ?{' '}

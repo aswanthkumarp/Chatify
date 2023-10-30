@@ -124,10 +124,12 @@ const Container = styled.div`
     grid-template-rows: 15% 70% 15%;
   }
   .chat-header {
+    height : 5rem;
+    background-color :#25d366;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 1rem;
     .user-details {
       display: flex;
       align-items: center;
@@ -145,6 +147,8 @@ const Container = styled.div`
     }
   }
   .chat-messages {
+    background-color :#ECEFF4;
+    margin-top :25px;
     padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
@@ -159,6 +163,7 @@ const Container = styled.div`
       }
     }
     .message {
+      
       display: flex;
       align-items: center;
       .content {
@@ -167,7 +172,7 @@ const Container = styled.div`
         padding: 1rem;
         font-size: 1.1rem;
         border-radius: 1rem;
-        color: #d1d1d1;
+        color: black;
         @media screen and (min-width: 720px) and (max-width: 1080px) {
           max-width: 70%;
         }
@@ -176,13 +181,13 @@ const Container = styled.div`
     .sended {
       justify-content: flex-end;
       .content {
-        background-color: #4f04ff21;
+        background-color: #BF616A;
       }
     }
     .recieved {
       justify-content: flex-start;
       .content {
-        background-color: #9900ff20;
+        background-color: #EBCB8B;
       }
     }
   }
