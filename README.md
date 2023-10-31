@@ -66,7 +66,4 @@ Chatify is a real-time chat application that allows users to create accounts, lo
   ![Screenshot 2023-10-31 232800](https://github.com/aswanthkumarp/Chatify/assets/122904133/4bbb04ce-6abe-48f2-8443-8fdb6273b5d0)
 
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
